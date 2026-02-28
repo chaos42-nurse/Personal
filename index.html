@@ -1,7 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="0; url=https://open.spotify.com/track/4spyMABCbID9Tem2ukcbnz">
+<meta charset="UTF-8">
+<title>Personale</title>
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<style>
+html, body {
+    margin: 0;
+    height: 100%;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+</style>
 </head>
-<body></body>
+<body>
+
+<iframe id="pdfViewer"></iframe>
+
+<script>
+    const timestamp = new Date().getTime();
+    document.getElementById("pdfViewer").src = "Personale.pdf?t=" + timestamp;
+</script>
+
+</body>
 </html>
